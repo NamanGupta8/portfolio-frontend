@@ -1,12 +1,14 @@
+<!-- navbar  -->
 <mat-toolbar class="mat-elevation-z8">
   <button
+    class="!block md:!hidden"
+    (click)="opened = !opened"
     mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with menu icon"
+    aria-label="menu icon"
   >
     <mat-icon>menu</mat-icon>
   </button>
-  <span>My App</span>
+  <span>Portfolio</span>
   <span class="flex-auto"></span>
   <button
     mat-icon-button
@@ -23,3 +25,10 @@
     <mat-icon>share</mat-icon>
   </button>
 </mat-toolbar>
+<!-- sidenav  -->
+<mat-sidenav-container class="h-screen">
+  <mat-sidenav [(opened)]="opened" class="w-full">
+    <a>Home</a>
+  </mat-sidenav>
+  <mat-sidenav-content> End </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,5 +1,5 @@
 <!-- navbar  -->
-<mat-toolbar class="mat-elevation-z8">
+<mat-toolbar class="bg-cover" ngClass="{{ background }}">
   <button
     class="!block md:!hidden"
     (click)="opened = !opened"
@@ -8,27 +8,109 @@
   >
     <mat-icon>menu</mat-icon>
   </button>
-  <span>Portfolio</span>
+  <span class="!block md:!hidden">Portfolio</span>
   <span class="flex-auto"></span>
-  <button
-    mat-icon-button
-    class="example-icon favorite-icon"
-    aria-label="Example icon-button with heart icon"
-  >
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with share icon"
-  >
-    <mat-icon>share</mat-icon>
-  </button>
+  <div class="!hidden md:!block">
+    <button mat-button routerLink="/dashboard/home" routerLinkActive="mat-warn">
+      Home
+    </button>
+    <button
+      mat-button
+      routerLink="/dashboard/about"
+      routerLinkActive="mat-warn"
+    >
+      About
+    </button>
+    <button
+      mat-button
+      routerLink="/dashboard/skills"
+      routerLinkActive="mat-warn"
+    >
+      Skills
+    </button>
+    <button
+      mat-button
+      routerLink="/dashboard/projects"
+      routerLinkActive="mat-warn"
+    >
+      Projects
+    </button>
+    <button
+      mat-button
+      routerLink="/dashboard/contact"
+      routerLinkActive="mat-warn"
+    >
+      Contact
+    </button>
+  </div>
 </mat-toolbar>
 <!-- sidenav  -->
-<mat-sidenav-container class="h-screen">
-  <mat-sidenav [(opened)]="opened" class="w-full">
-    <a>Home</a>
+<mat-sidenav-container
+  class="h-[calc(100%_-_65px)] bg-cover bg-no-repeat"
+  ngClass="{{ background }}"
+>
+  <mat-sidenav
+    [(opened)]="opened"
+    class="w-44 border-none text-center font-sans"
+    ngClass="{{ background }}"
+    #sidenav
+  >
+    <img class="avatar mat-elevation-z8" src="bg-avatar-image" />
+
+    <h4 class="name">Naman Gupta</h4>
+    <p class="designation">Software Engineer</p>
+
+    <mat-divider></mat-divider>
+    <div class="leading-3 pr-10">
+      <button
+        mat-icon-button
+        routerLink="/dashboard/home"
+        routerLinkActive="mat-accent"
+        (click)="sidenav.close()"
+      >
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
+      <br />
+      <button
+        mat-icon-button
+        routerLink="/dashboard/about"
+        routerLinkActive="mat-accent"
+        (click)="sidenav.close()"
+      >
+        <mat-icon>person</mat-icon>
+        <span>About</span></button
+      ><br />
+      <button
+        mat-icon-button
+        routerLink="/dashboard/skills"
+        routerLinkActive="mat-accent"
+        (click)="sidenav.close()"
+      >
+        <mat-icon>vertical_split</mat-icon>
+        <span>Skills</span></button
+      ><br />
+      <button
+        mat-icon-button
+        routerLink="/dashboard/projects"
+        routerLinkActive="mat-accent"
+        (click)="sidenav.close()"
+      >
+        <mat-icon>work</mat-icon>
+        <span>Projects</span></button
+      ><br />
+      <button
+        mat-icon-button
+        routerLink="/dashboard/contact"
+        routerLinkActive="mat-accent"
+        (click)="sidenav.close()"
+      >
+        <mat-icon>call</mat-icon>
+        <span>Contact</span></button
+      ><br />
+    </div>
   </mat-sidenav>
-  <mat-sidenav-content> End </mat-sidenav-content>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
 </mat-sidenav-container>

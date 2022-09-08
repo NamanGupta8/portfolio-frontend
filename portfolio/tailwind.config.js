@@ -14,7 +14,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "first-image": "url('./assets/images/background.jpg')",
+        // "first-image": "url('./assets/images/background.jpg')",
         "second-image": "url('./assets/images/background2.jpg')",
         "third-image": "url('./assets/images/background3.jpg')",
         "avatar-image": "url('./assets/images/avatar.jpg')",

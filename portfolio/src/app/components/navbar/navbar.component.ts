@@ -31,13 +31,14 @@ export class NavbarComponent implements OnInit {
               this.background = '!bg-third-image';
               break;
             case '/dashboard/skills':
-              this.background = '!bg-first-image';
-              break;
-            case '/dashboard/profile':
               this.background = '!bg-second-image';
               break;
+            case '/dashboard/projects':
+              this.background = '!bg-third-image';
+              break;
             case '/dashboard/contact':
-              this.background = '!bg-first-image';
+              this.background = '!bg-second-image';
+
               break;
             default:
               this.background = '!bg-second-image';

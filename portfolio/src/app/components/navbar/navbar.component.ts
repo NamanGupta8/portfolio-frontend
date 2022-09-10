@@ -28,17 +28,16 @@ export class NavbarComponent implements OnInit {
               this.background = '!bg-second-image';
               break;
             case '/portfolio/about':
-              this.background = '!bg-first-image grayscale mat-elevation-z8';
+              this.background = '!bg-first-image grayscale';
               break;
             case '/portfolio/skills':
-              this.background = '!bg-black';
+              this.background = '!bg-fourth-image';
               break;
             case '/portfolio/projects':
               this.background = '!bg-third-image';
               break;
             case '/portfolio/contact':
               this.background = '!bg-second-image';
-
               break;
             default:
               this.background = '!bg-second-image';

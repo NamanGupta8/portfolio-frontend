@@ -17,6 +17,7 @@ module.exports = {
         "first-image": "url('./assets/images/background6.jpg')",
         "second-image": "url('./assets/images/background2.jpg')",
         "third-image": "url('./assets/images/background5.jpg')",
+        "fourth-image": "url('./assets/images/background7.jpg')",
         "avatar-image": "url('./assets/images/avatar.jpg')",
       },
       animation: {

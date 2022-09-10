@@ -5,12 +5,14 @@ h1 {
   font-size: 5em;
   text-transform: uppercase;
   text-align: center;
-  background: url("/assets/images/background3.jpg");
+  background: url("/assets/images/background6.jpg");
+  border-color: #000;
   background-size: cover;
   background-attachment: fixed;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter: grayscale(100);
 
   ::before {
     content: attr(data-var);

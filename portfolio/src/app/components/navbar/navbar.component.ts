@@ -24,19 +24,19 @@ export class NavbarComponent implements OnInit {
       .subscribe((event: NavigationEvent) => {
         if (event instanceof NavigationStart) {
           switch (event.url) {
-            case '/dashboard/home':
+            case '/portfolio/home':
               this.background = '!bg-second-image';
               break;
-            case '/dashboard/about':
+            case '/portfolio/about':
+              this.background = '!bg-first-image grayscale mat-elevation-z8';
+              break;
+            case '/portfolio/skills':
+              this.background = '!bg-black';
+              break;
+            case '/portfolio/projects':
               this.background = '!bg-third-image';
               break;
-            case '/dashboard/skills':
-              this.background = '!bg-second-image';
-              break;
-            case '/dashboard/projects':
-              this.background = '!bg-third-image';
-              break;
-            case '/dashboard/contact':
+            case '/portfolio/contact':
               this.background = '!bg-second-image';
 
               break;

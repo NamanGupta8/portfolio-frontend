@@ -11,33 +11,33 @@
   <span class="!block md:!hidden">Portfolio</span>
   <span class="flex-auto"></span>
   <div class="!hidden md:!block">
-    <button mat-button routerLink="/dashboard/home" routerLinkActive="mat-warn">
+    <button mat-button routerLink="/portfolio/home" routerLinkActive="mat-warn">
       Home
     </button>
     <button
       mat-button
-      routerLink="/dashboard/about"
-      routerLinkActive="mat-warn"
-    >
-      About
-    </button>
-    <button
-      mat-button
-      routerLink="/dashboard/skills"
+      routerLink="/portfolio/skills"
       routerLinkActive="mat-warn"
     >
       Skills
     </button>
     <button
       mat-button
-      routerLink="/dashboard/projects"
+      routerLink="/portfolio/projects"
       routerLinkActive="mat-warn"
     >
       Projects
     </button>
     <button
       mat-button
-      routerLink="/dashboard/contact"
+      routerLink="/portfolio/about"
+      routerLinkActive="mat-warn"
+    >
+      About
+    </button>
+    <button
+      mat-button
+      routerLink="/portfolio/contact"
       routerLinkActive="mat-warn"
     >
       Contact
@@ -46,67 +46,68 @@
 </mat-toolbar>
 <!-- sidenav  -->
 <mat-sidenav-container
-  class="h-[calc(100%_-_65px)] bg-cover bg-no-repeat"
+  class="h-full md:h-[calc(100%_-_65px)] bg-cover bg-no-repeat"
   ngClass="{{ background }}"
 >
   <mat-sidenav
     [(opened)]="opened"
-    class="w-44 border-none text-center font-sans"
+    class="w-44 border-none"
     ngClass="{{ background }}"
     #sidenav
   >
     <img class="avatar mat-elevation-z8" src="bg-avatar-image" />
 
-    <h4 class="name">Naman Gupta</h4>
-    <p class="designation">Software Engineer</p>
+    <h4 class="name text-center">Naman Gupta</h4>
+    <p class="designation text-center">Software Engineer</p>
 
     <mat-divider></mat-divider>
-    <div class="leading-3 pr-10">
+    <div class="leading-3 p-3">
       <button
         mat-icon-button
-        routerLink="/dashboard/home"
+        routerLink="/portfolio/home"
         routerLinkActive="mat-accent"
         (click)="sidenav.close()"
       >
-        <mat-icon>home</mat-icon>
-        <span>Home</span>
+        <mat-icon>home</mat-icon>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="font-sans">Home</span>
       </button>
-      <br />
+      <br /><br />
       <button
         mat-icon-button
-        routerLink="/dashboard/about"
+        routerLink="/portfolio/skills"
         routerLinkActive="mat-accent"
         (click)="sidenav.close()"
       >
-        <mat-icon>person</mat-icon>
-        <span>About</span></button
-      ><br />
+        <mat-icon>vertical_split</mat-icon>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="font-sans">Skills</span></button
+      ><br /><br />
       <button
         mat-icon-button
-        routerLink="/dashboard/skills"
+        routerLink="/portfolio/projects"
         routerLinkActive="mat-accent"
         (click)="sidenav.close()"
       >
-        <mat-icon>vertical_split</mat-icon>
-        <span>Skills</span></button
-      ><br />
+        <mat-icon>work</mat-icon>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="font-sans">Projects</span></button
+      ><br /><br />
       <button
         mat-icon-button
-        routerLink="/dashboard/projects"
+        routerLink="/portfolio/about"
         routerLinkActive="mat-accent"
         (click)="sidenav.close()"
       >
-        <mat-icon>work</mat-icon>
-        <span>Projects</span></button
-      ><br />
+        <mat-icon>person</mat-icon>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="font-sans">About</span>
+      </button>
+      <br /><br />
       <button
         mat-icon-button
-        routerLink="/dashboard/contact"
+        routerLink="/portfolio/contact"
         routerLinkActive="mat-accent"
         (click)="sidenav.close()"
       >
-        <mat-icon>call</mat-icon>
-        <span>Contact</span></button
+        <mat-icon>call</mat-icon>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="font-sans">Contact</span></button
       ><br />
     </div>
   </mat-sidenav>

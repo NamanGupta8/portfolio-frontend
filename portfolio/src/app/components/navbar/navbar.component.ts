@@ -37,7 +37,7 @@ export class NavbarComponent implements OnInit {
               this.background = '!bg-third-image';
               break;
             case '/portfolio/contact':
-              this.background = '!bg-second-image';
+              this.background = '!bg-fifth-image';
               break;
             default:
               this.background = '!bg-second-image';

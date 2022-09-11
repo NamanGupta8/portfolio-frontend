@@ -18,6 +18,10 @@ module.exports = {
         "second-image": "url('./assets/images/background2.jpg')",
         "third-image": "url('./assets/images/background5.jpg')",
         "fourth-image": "url('./assets/images/background7.jpg')",
+        "fifth-image": "url('./assets/images/background8.jpg')",
+        "email-icon": "url('./assets/images/email-icon.jpg')",
+        "linkedln-icon": "url('./assets/images/linkedln-icon.png')",
+        "github-icon": "url('./assets/images/github-icon.png')",
         "avatar-image": "url('./assets/images/avatar.jpg')",
       },
       animation: {

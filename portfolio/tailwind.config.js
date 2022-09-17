@@ -14,15 +14,14 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "first-image": "url('./assets/images/background6.jpg')",
-        "second-image": "url('./assets/images/background2.jpg')",
-        "third-image": "url('./assets/images/background5.jpg')",
+        "first-image": "url('./assets/images/background10.jpg')",
+        "second-image": "url('./assets/images/background3.jpg')",
+        "third-image": "url('./assets/images/background11.jpg')",
         "fourth-image": "url('./assets/images/background7.jpg')",
         "fifth-image": "url('./assets/images/background8.jpg')",
         "email-icon": "url('./assets/images/email-icon.jpg')",
         "linkedln-icon": "url('./assets/images/linkedln-icon.png')",
         "github-icon": "url('./assets/images/github-icon.png')",
-        "avatar-image": "url('./assets/images/avatar.jpg')",
       },
       animation: {
         cursor: "cursor .6s linear infinite alternate",

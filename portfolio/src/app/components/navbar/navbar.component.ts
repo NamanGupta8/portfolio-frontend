@@ -28,7 +28,7 @@ export class NavbarComponent implements OnInit {
               this.background = '!bg-second-image';
               break;
             case '/portfolio/about':
-              this.background = '!bg-first-image grayscale';
+              this.background = '!bg-first-image';
               break;
             case '/portfolio/skills':
               this.background = '!bg-fourth-image';
@@ -40,7 +40,7 @@ export class NavbarComponent implements OnInit {
               this.background = '!bg-fifth-image';
               break;
             default:
-              this.background = '!bg-second-image';
+              this.background = '!bg-third-image';
               break;
           }
         }

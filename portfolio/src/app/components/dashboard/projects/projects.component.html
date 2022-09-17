@@ -1,1 +1,35 @@
-<section class="text-center">project works!</section>
+<section class="text-center">
+  <div class="eleven">
+    <h1>Previous Projects</h1>
+  </div>
+  <div class="container">
+    <div class="item" [attr.id]="'item1'">
+      <mat-card>First</mat-card>
+      <mat-card>First</mat-card>
+    </div>
+    <div class="item" [attr.id]="'item2'">
+      <mat-card>SECOND</mat-card>
+      <mat-card>SECOND</mat-card>
+    </div>
+    <div class="item" [attr.id]="'item3'">
+      <mat-card>THIRD</mat-card>
+      <mat-card>THIRD</mat-card>
+    </div>
+    <div class="item" [attr.id]="'item4'">
+      <mat-card>FOURTH</mat-card>
+      <mat-card>FOURTH</mat-card>
+    </div>
+  </div>
+  <!-- <div class="links">
+    <a (click)="scrollTo('item1')">1</a>
+    <a (click)="scrollTo('item2')">2</a>
+    <a (click)="scrollTo('item3')">3</a>
+    <a (click)="scrollTo('item4')">4</a>
+  </div> -->
+  <button mat-mini-fab color="warn" (click)="scrollTo('prev')">
+    <mat-icon>keyboard_arrow_left</mat-icon>
+  </button>
+  <button mat-mini-fab color="warn" (click)="scrollTo('next')">
+    <mat-icon>keyboard_arrow_right</mat-icon>
+  </button>
+</section>

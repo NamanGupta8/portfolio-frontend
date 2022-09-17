@@ -1,0 +1,65 @@
+h1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 80px;
+  color: #fff;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.eleven h1 {
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.5em;
+  padding-bottom: 45px;
+  // font-family: "Raleway";
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  @apply text-3xl md:text-5xl;
+  @apply mt-5;
+  @apply font-extrabold;
+}
+
+.eleven h1:before {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 60%;
+  left: 50%;
+  margin-left: -30%;
+  height: 1px;
+  content: "";
+  background-color: #777;
+  z-index: 4;
+}
+.container {
+  width: 500px;
+  height: 400px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.container .item {
+  flex: 0 0 500px;
+  width: 500px;
+  gap: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  // font-weight: 700;
+  // font-size: 3rem;
+  color: white;
+  scroll-snap-align: start;
+}
+mat-card {
+  @apply bg-white;
+  color: black;
+}

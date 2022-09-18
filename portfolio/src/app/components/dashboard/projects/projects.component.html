@@ -2,30 +2,96 @@
   <div class="eleven">
     <h1>Previous Projects</h1>
   </div>
-  <div class="container">
-    <div class="item" [attr.id]="'item1'">
-      <mat-card>First</mat-card>
-      <mat-card>First</mat-card>
+  <div class="container scale-110 md:scale-150 mt-6">
+    <div class="item m-2 font-sans leading-normal flex" [attr.id]="'item1'">
+      <!-- card container -->
+      <div
+        class="max-w-lg shadow-lg rounded overflow-hidden m-4 bg-transparent text-white sm:flex"
+      >
+        <div
+          class="h-48 sm:h-auto sm:w-48 md:w-64 flex-none bg-cover bg-center rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden cursor-pointer"
+          style="background-image: url('/assets/images/ari-simulation.png')"
+          (click)="onClick('ari')"
+        ></div>
+
+        <!-- card-content -->
+        <div class="px-6 py-4">
+          <h2 class="mb-2 font-black">ARI Simulation</h2>
+          <p class="mb-4 text-grey-dark text-sm">
+            Redesigned, implemented and deployed the latest version of ARI
+            Simulation official website, improving audits for performance and
+            accessibility (SEO) by 40%.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="item" [attr.id]="'item2'">
-      <mat-card>SECOND</mat-card>
-      <mat-card>SECOND</mat-card>
+    <div class="item m-2 font-sans leading-normal flex" [attr.id]="'item2'">
+      <!-- card container -->
+      <div
+        class="max-w-lg shadow-lg rounded overflow-hidden m-4 bg-transparent text-white sm:flex"
+      >
+        <div
+          class="h-48 sm:h-auto sm:w-48 md:w-64 flex-none bg-cover bg-center rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden cursor-pointer"
+          style="background-image: url('/assets/images/onsap-staging.png')"
+          (click)="onClick('onsap')"
+        ></div>
+
+        <!-- card-content -->
+        <div class="px-6 py-4">
+          <h2 class="mb-2 font-black">Onsap Staging</h2>
+          <p class="mb-4 text-grey-dark text-sm">
+            Admin Dashboards for ONSAP Ship Simulator in which admin can C.R.U.D
+            a seafarer,generate reports and PDF of various exams held and
+            candidate information.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="item" [attr.id]="'item3'">
-      <mat-card>THIRD</mat-card>
-      <mat-card>THIRD</mat-card>
+    <div class="item m-2 font-sans leading-normal flex" [attr.id]="'item3'">
+      <!-- card container -->
+      <div
+        class="max-w-lg shadow-lg rounded overflow-hidden m-4 bg-transparent text-white sm:flex"
+      >
+        <div
+          class="h-48 sm:h-auto sm:w-48 md:w-64 flex-none bg-cover bg-center rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden cursor-pointer"
+          style="background-image: url('/assets/images/e-sim-cloud.png')"
+          (click)="onClick('e-sim')"
+        ></div>
+
+        <!-- card-content -->
+        <div class="px-6 py-4">
+          <h2 class="mb-2 font-black">E-Sim-Cloud</h2>
+          <p class="mb-4 text-grey-dark text-sm">
+            Designed and Implemented a dashboard for customers of our company,
+            to ensure proper billing and payment information is displayed with
+            regards to specific simulator
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="item" [attr.id]="'item4'">
-      <mat-card>FOURTH</mat-card>
-      <mat-card>FOURTH</mat-card>
+    <div class="item m-2 font-sans leading-normal flex" [attr.id]="'item4'">
+      <!-- card container -->
+      <div
+        class="max-w-lg shadow-lg rounded overflow-hidden m-4 bg-transparent text-white sm:flex"
+      >
+        <div
+          class="h-48 sm:h-auto sm:w-48 md:w-64 flex-none bg-cover bg-center rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden cursor-pointer"
+          style="background-image: url('/assets/images/ari-examination.png')"
+          (click)="onClick('examination')"
+        ></div>
+
+        <!-- card-content -->
+        <div class="px-6 py-4">
+          <h2 class="mb-2 font-black">ARI Examination</h2>
+          <p class="mb-4 text-grey-dark text-sm">
+            Worked on user interaction modules for, DES Candidate, ARI
+            Examination portal, with the help of Angular Material UI & TS.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-  <!-- <div class="links">
-    <a (click)="scrollTo('item1')">1</a>
-    <a (click)="scrollTo('item2')">2</a>
-    <a (click)="scrollTo('item3')">3</a>
-    <a (click)="scrollTo('item4')">4</a>
-  </div> -->
+  <br />
   <button mat-mini-fab color="warn" (click)="scrollTo('prev')">
     <mat-icon>keyboard_arrow_left</mat-icon>
   </button>

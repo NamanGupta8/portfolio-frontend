@@ -37,12 +37,12 @@ h1 {
   z-index: 4;
 }
 .container {
-  width: 500px;
+  width: 600px;
   height: 400px;
   overflow-y: hidden;
   overflow-x: hidden;
-  display: flex;
   margin: auto;
+  display: flex;
   margin-top: 2rem;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -50,7 +50,7 @@ h1 {
 .container .item {
   flex: 0 0 500px;
   width: 500px;
-  gap: 8px;
+  gap: 6px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +59,7 @@ h1 {
   color: white;
   scroll-snap-align: start;
 }
-mat-card {
-  @apply bg-white;
-  color: black;
+img :hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

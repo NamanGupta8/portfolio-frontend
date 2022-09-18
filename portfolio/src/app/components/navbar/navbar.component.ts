@@ -36,11 +36,23 @@ export class NavbarComponent implements OnInit {
             case '/portfolio/projects':
               this.background = '!bg-third-image';
               break;
+            case '/portfolio/projects#item1':
+              this.background = '!bg-third-image';
+              break;
+            case '/portfolio/projects#item2':
+              this.background = '!bg-third-image';
+              break;
+            case '/portfolio/projects#item3':
+              this.background = '!bg-third-image';
+              break;
+            case '/portfolio/projects#item4':
+              this.background = '!bg-third-image';
+              break;
             case '/portfolio/contact':
               this.background = '!bg-fifth-image';
               break;
             default:
-              this.background = '!bg-third-image';
+              this.background = '!bg-second-image';
               break;
           }
         }
